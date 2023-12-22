@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/defaultlayout}">
+
+<th:block layout:fragment="css">
+	<link rel="stylesheet" th:href="@{/css/login.css}">
+</th:block>
+
+<div layout:fragment="content">
+	<main>
+		<div class="main-container">
+			<div class="post-container">
+				<div id="login-title"><a>로그인</a></div>
+				<div class="login-box">
+					<form action="/user/login" method="post">
+						<div class="login-id">
+							<a>이메일</a>
+						</div>
+						<div class="login-id">
+							<input type="text" required name="email">
+						</div>
+						<div class="login-password">
+							<a>비밀번호</a>
+						</div>
+						<div class="login-password">
+							<input type="password" required name="password">
+						</div>
+						<div id="find-password"><a href="">비밀번호 찾기</a></div>
+						<div class="login-buttons">
+							<button type="submit" class="login-submit">로그인하기</button>
+						</div>
+					</form>
+					<div class="login-buttons">
+						<button onclick="location.href='/user/register';" class="login-submit">회원 가입하기</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</div>
+
+</html>

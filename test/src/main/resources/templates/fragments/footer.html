@@ -1,0 +1,23 @@
+<html lagn="ko" xmlns:th="http://www.thymeleaf.org">
+<!--footerFragment 선언-->
+
+<footer th:fragment="footerFragment">
+	<div class="footer-main">
+		<div class="footer-play">
+			<div class="title-content">
+				<a id="audio-title">재생 중인 노래가 없습니다.</a>
+			</div>
+			<div id="audio-player-container">
+				<audio src="" preload="metadata" loop></audio>
+				<button id="play-icon"></button>
+				<span id="current-time" class="time">0:00</span>
+				<input type="range" id="seek-slider" max="100" value="0">
+				<span id="duration" class="time">0:00</span>
+				<output id="volume-output">100</output> <input type="range" id="volume-slider" max="100" value="100">
+				<button id="mute-icon"></button>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lagn="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Colorless</title>
+	<meta name="viewport"
+		content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0" />
+	<!-- css 추가 가능 -->
+	<th:block layout:fragment="css"></th:block>
+	
+	<link rel="stylesheet" th:href="@{/css/index.css}">
+</head>
+
+<body>
+	<!-- header fragment 사용 -->
+	<th:block th:replace="~{fragments/header :: headerFragment}"></th:block>
+	
+	<!-- content fragment 사용 -->
+	<th:block layout:fragment="content"></th:block>
+	
+	<!-- footer fragment 사용 -->
+	<th:block th:replace="~{fragments/footer :: footerFragment}"></th:block>
+	
+</body>
+
+<script th:src="@{/js/player.js}" type="module"></script>
+
+<th:block layout:fragment="script"></th:block>
+
+</html>

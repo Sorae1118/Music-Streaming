@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/defaultlayout}">
+
+<th:block layout:fragment="css">
+	<link rel="stylesheet" th:href="@{/css/register.css}">
+</th:block>
+<div layout:fragment="content">
+	<main>
+		<div class="main-container">
+			<div class="post-container">
+				<div id="regi-title"><a>회원가입</a></div>
+				<div class="regi-box">
+					<form action="/user/register" method="post">
+						<div class="regi-label">
+							<a>이메일</a>
+						</div>
+						<div class="regi-label">
+							<input class="regi-input" type="text" name="email">
+						</div>
+						<div class="regi-label">
+							<a>이름</a>
+						</div>
+						<div class="regi-label">
+							<input class="regi-input" type="text" name="username">
+						</div>
+						<div class="regi-label">
+							<a>비밀번호</a>
+						</div>
+						<div class="regi-label">
+							<input class="regi-input" type="password" name="password">
+						</div>
+						<div class="regi-label">
+							<a>비밀번호 확인</a>
+						</div>
+						<div class="regi-label">
+							<input class="regi-input" type="password">
+						</div>
+						<div class="regi-label">
+							<a>휴대폰 번호</a>
+						</div>
+						<div class="regi-label">
+							<input class="regi-input" type="text" name="phone">
+						</div>
+						<div class="regi-label">
+							<a>성별</a>
+						</div>
+						<div class="regi-label">
+							<input type='radio' name='gender' value='male' />남성
+							<input type='radio' name='gender' value='female' />여성
+						</div>
+						<div class="regi-label">
+							<input id="checkbox" type='checkbox' name='agree' value='agree' />(필수) 이용약관과 개인정보 수집 및 이용 동의
+						</div>
+						<div class="regi-buttons">
+							<button type="submit" class="regi-submit">가입하기</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+
+</div>
+
+</html>

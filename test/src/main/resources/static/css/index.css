@@ -1,0 +1,361 @@
+@font-face {
+    font-family: 'korean';
+    src: url('./Font/NanumGothic-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'english';
+    src: url('./Font/NanumGothic-Regular.ttf') format('truetype');
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("../image/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.header-main {
+    font-family: 'english';
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left img {
+    max-height: 60px; /* 이미지의 최대 높이를 조절합니다. */
+    width: auto; /* 이미지의 너비를 자동으로 조정 */
+    padding-left: 50px;
+    cursor: pointer;
+}
+
+.header-center ul {
+    padding: 0;
+    cursor: default;
+}
+
+.header-center li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header-center li:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.header-center li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Dropdown Styles */
+.header-center ul li {
+    position: relative;
+}
+
+.header-center ul li:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff; /* 배경색 지정 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    z-index: 1; /* 다른 요소 위에 표시 */
+}
+
+.submenu li {
+    display: block;
+    padding: 10px;
+    text-align: left;
+}
+
+.submenu li:hover {
+    background-color: #f5f5f5; /* 마우스 호버 시 배경색 변경 */
+}
+
+.header-right {
+    padding-right: 50px;
+    cursor: default;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: inherit;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header-right a:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+#empty-space {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column; 
+    background-color: #000000;
+   	color: white;
+   	font-size: 40px;
+}
+
+#empty-space img {
+	max-height: 400px;
+}
+.main-container {
+    background-color: white;
+    margin: 15px;
+    padding: 30px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around; /* 여백을 고르게 분배 */
+    margin-bottom: 40px;
+}
+
+.box-container img {
+	cursor: pointer;
+}
+.box {
+    width: 23%; /* 박스의 폭을 23%로 지정 (공백이 포함된 비율을 조절할 수 있음) */
+    max-width: 400px; /* 최대 너비 지정 */
+    margin: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.box a {
+    display: block;
+    margin-top: 10px;
+}
+/* ----------------------------------- */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 70%;
+}
+.footer-main {
+    font-family: 'korean';
+    background-color: black;
+   	border-color: #57F2D6;
+   	border-radius: 0px 25px 0px 0px;
+}
+
+.footer-main button {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    width: 35px;
+    height: 35px;
+    float: left;
+}
+
+#audio-player-container {
+    --seek-before-width: 0%;
+    --volume-before-width: 100%;
+    --buffered-width: 0%;
+    max-width: 95%;
+    display: flex;
+    align-items: center; /* 세로 중앙 정렬 */
+    color: white;
+    height: 50px;
+}
+
+.footer-play p {
+    position: absolute;
+    right: 5%;
+    padding: 0 5px;
+    margin: 0;
+}
+
+
+.title-content {
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+}
+
+#play-icon {
+    margin: 0 2.5%;
+}
+/* 버튼 */
+.footer-play path {
+    stroke: #57F2D6; /*버튼 색상 #57F2D6 */
+   
+}
+
+.time {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.footer-play output {
+    display: inline-block;
+    width: 10px;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 40px;
+
+}
+
+#volume-slider {
+    margin: 0 2.5%;
+}
+
+#volume-slider::-webkit-slider-runnable-track {
+    background: rgba(0, 163, 181, 0.6);
+}
+
+#volume-slider::-moz-range-track {
+    background: rgba(0, 181, 160, 0.6);
+}
+
+#volume-slider::-ms-fill-upper {
+    background: rgba(0, 181, 115, 0.6);
+}
+
+#volume-slider::before {
+    width: var(--volume-before-width);
+}
+
+/* 시간 슬라이드 바 */
+input[type="range"] {
+    position: relative;
+    width: 48%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+    height: 19px;
+    float: left;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(0, 125, 181, 0.6) var(--buffered-width), rgba(0, 125, 181, 0.2) var(--buffered-width));
+}
+
+input[type="range"]::before {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 0;
+    width: var(--seek-before-width);
+    height: 3px;
+    background-color: #57F2D6;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    position: relative;
+    -webkit-appearance: none;
+    box-sizing: content-box;
+    border: 1px solid #000000; /* 커서 기본 테두리 색*/
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #fff; /* 커서 기본 배경 색*/
+    cursor: pointer;
+    margin: -7px 0 0 0;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+    transform: scale(1.2);
+    background: #57F2D6; /* 커서 클릭 시 색상 변경*/
+}
+
+input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-progress {
+    background-color: #007db5;
+}
+
+input[type="range"]::-moz-focus-outer {
+    border: 0;
+}
+
+input[type="range"]::-moz-range-thumb {
+    box-sizing: content-box;
+    border: 1px solid #007db5;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+input[type="range"]:active::-moz-range-thumb {
+    transform: scale(1.2);
+    background: #ffffff;
+}
+
+input[type="range"]::-ms-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: transparent;
+    border: solid transparent;
+    color: transparent;
+}
+
+input[type="range"]::-ms-fill-lower {
+    background-color: #007db5;
+}
+
+input[type="range"]::-ms-fill-upper {
+    background: linear-gradient(to right, rgba(0, 125, 181, 0.6) var(--buffered-width), rgba(0, 125, 181, 0.2) var(--buffered-width));
+}
+
+input[type="range"]::-ms-thumb {
+    box-sizing: content-box;
+    border: 1px solid #007db5;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+input[type="range"]:active::-ms-thumb {
+    transform: scale(1.2);
+    background: #4f636c;
+}
