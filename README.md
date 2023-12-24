@@ -3,7 +3,7 @@
 <br>
 
 ## 프로젝트 소개
-* 온라인 원하는 음악을 들을 수 있는 뮤직 스트리밍 사이트입니다.
+* 온라인으로 원하는 음악을 들을 수 있는 뮤직 스트리밍 사이트입니다.
 * '컬러리스'는 무색의 의미를 담습니다. 음악이 각자의 감성과 해석에 맡겨져, 취향의 간섭없이 자유롭게 음악을 듣는다는 철학이 담겼습니다.
 * 아직 기능적으로 미흡한 부분이 존재합니다. (계속 구현할 예정)
 <br>
@@ -47,11 +47,13 @@
 <br><br><br>
 
 2. 로그인 화면
-* 로그인 페이지입니다. ![image](https://github.com/Sorae1118/Music-Streaming/assets/115053276/625b788e-fa1f-4a44-bda2-cb8bcaed729e)
+* 로그인 페이지입니다.
+* 세션 기능(구현 예정)![image](https://github.com/Sorae1118/Music-Streaming/assets/115053276/625b788e-fa1f-4a44-bda2-cb8bcaed729e)
 <br><br><br>
 
 3. 회원가입 화면
-* 회원가입 페이지입니다.![image](https://github.com/Sorae1118/Music-Streaming/assets/115053276/2c06c600-9902-486e-88c2-137e2f081bbe)
+* 회원가입 페이지입니다.
+* 각 절차마다 예외 처리 필요(구현 예정)![image](https://github.com/Sorae1118/Music-Streaming/assets/115053276/2c06c600-9902-486e-88c2-137e2f081bbe)
 <br><br><br>
 
 4. 메인 스트리밍 화면
