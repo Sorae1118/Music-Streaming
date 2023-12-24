@@ -55,8 +55,8 @@
 <br><br><br>
 
 4. 메인 스트리밍 화면
-* 여러 게시글을 확인할 수 있는 페이지입니다.
-* 가장 최근 게시물부터 보이도록 DB에서 호출합니다. ![image](https://github.com/Sorae1118/Music-Streaming/assets/115053276/36e7334b-5b0d-4b4a-9f53-e473ec78ebf3)
+* 메인 스크롤시 보이는 스트리밍 앨범 페이지입니다.
+* 앨범을 클릭하면 해당 노래의 URL이 호출됩니다. 음원 재생 푸터는 해당 URL로 초기화되어 노래를 재생할 수 있습니다. ![image](https://github.com/Sorae1118/Music-Streaming/assets/115053276/36e7334b-5b0d-4b4a-9f53-e473ec78ebf3)
 <br><br><br>
 
 
