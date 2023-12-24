@@ -42,6 +42,11 @@
 ||email|
 ||password|
 ||phone|
+|SONG|songid|
+||title|
+||singer|
+||musicurl|
+
 
 ## 📀 Function
 1. 로그인, 로그아웃
