@@ -34,6 +34,15 @@
 </div>
 <br>
 
+## 📃 DB Info
+|Name|Column|
+|---|-----|
+|USER|userid|
+||username|
+||email|
+||password|
+||phone|
+
 ## 📀 Function
 1. 로그인, 로그아웃
 2. 앨범 클릭 이벤트 (노래 재생)
