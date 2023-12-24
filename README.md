@@ -43,8 +43,7 @@
 ## 📺 화면구성
 
 1. 메인 화면
-* 메인 페이지입니다. ![image](https://github.com/Sorae1118/Music-Streaming/assets/115053276/e3a8d68c-3868-4277-a51a-066f6bda30d9)
-<br><br><br>
+* 메인 페이지입니다. ![image](https://github.com/Sorae1118/Music-Streaming/assets/115053276/e3a8d68c-3868-4277-a51a-066f6bda30d9)<br><br><br>
 
 2. 로그인 화면
 * 로그인 페이지입니다.
